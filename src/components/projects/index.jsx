@@ -14,7 +14,7 @@ const container = {
 };
 
 const ProjectList = ({ projects = [] }) => {
-  if (!projects.length) {
+  if (!projects || projects.length === 0) {
     return (
       <div className="text-center text-muted">
         No projects available at the moment.
@@ -29,9 +29,9 @@ const ProjectList = ({ projects = [] }) => {
       animate="show"
       className="w-full max-w-auto xl:max-w-4xl px-4 mx-auto lg:px-16 space-y-6 md:space-y-8 flex flex-col items-center"
     >
-      {projects.map((project, index) => {
-        return <ProjectLayout key={index} {...project} />;
-      })}
+      {projects.map((project, index) => (
+        <ProjectLayout key={index} {...project} />
+      ))}
     </motion.div>
   );
 };

@@ -7,7 +7,7 @@ const item = {
 };
 
 const ProjectLink = motion(Link);
-const ProjectLayout = ({ name = "Untitled", description = "", date = "", demoLink = "#" }) => {
+const ProjectLayout = ({ name = "Untitled", description = "No description available", date = "", demoLink = "#" }) => {
   return (
     <ProjectLink
       variants={item}
