@@ -13,7 +13,9 @@ const ProjectDetail = () => {
   return (
     <div>
       <h1>{project.name}</h1>
-      <p>{project.description}</p>
+      <p>
+        {project.description.replace(/"/g, '&quot;')}
+      </p>
       <img src={project.image} alt={project.name} />
     </div>
   );

@@ -52,7 +52,6 @@ export const projectsData = [
     date: "2025-02-15",
     demoLink: "https://drive.google.com/drive/folders/1K1vvN6OBQoAvCfWQpLoMTzK3Aan49kJ0?usp=drive_link",
   },
-  
 ];
 
 export const BtnList = [
