@@ -57,7 +57,7 @@ const AboutDetails = () => {
         </ItemLayout>
 
         <ItemLayout className={"col-span-full md:col-span-8 !p-0"}>
-          <Imagege
+          <Image
             className="w-full h-auto"
             src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=AnishDogra&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
             alt="AnishDogra's GitHub Stats"
@@ -66,7 +66,7 @@ const AboutDetails = () => {
             priority={true}
           />
         </ItemLayout>
-ge
+
         <ItemLayout className={"col-span-full"}>
           <Image
             className="w-full h-auto"
@@ -75,7 +75,7 @@ ge
             width={600}
             height={400}
             priority={true}
-          />ge
+          />
         </ItemLayout>
 
         <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
@@ -89,7 +89,7 @@ ge
           />
         </ItemLayout>
 
-        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>ge
+        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
           <Link
             href="https://github.com/AnishDogra/Nextjs-contentlayer-blog"
             target="_blank"
@@ -102,8 +102,10 @@ ge
               width={600}
               height={400}
               priority={true}
-            />export default AboutDetails;
-          </Link>        </ItemLayout>      </div>
+            />
+          </Link>
+        </ItemLayout>
+      </div>
     </section>
   );
 };
