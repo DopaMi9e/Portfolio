@@ -83,6 +83,9 @@ const Navigation = () => {
           );
         }}
       </ResponsiveComponent>
+      <div className="absolute bottom-4 text-center text-sm text-muted">
+        AnishPortfolio
+      </div>
     </div>
   );
 };

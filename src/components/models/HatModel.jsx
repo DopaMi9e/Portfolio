@@ -6,15 +6,14 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
-const HatModel = React.memo(function HatModel(props) {
-  // Use React.memo for performance optimization
+export default function HatModel(props) {
   const { nodes, materials } = useGLTF("/models/hat-transformed.glb");
-
   const modelRef = useRef();
 
   useFrame(() => {
     modelRef.current.rotation.y += 0.007;
   });
+
   return (
     <group
       {...props}
@@ -34,7 +33,6 @@ const HatModel = React.memo(function HatModel(props) {
       />
     </group>
   );
-});
+}
 
-export default HatModel;
 useGLTF.preload("/models/hat-transformed.glb");

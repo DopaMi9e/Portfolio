@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  purge: ["./src/**/*.{js,jsx,ts,tsx}"], // Ensure unused styles are purged
+  darkMode: "class", // Use "class" for dark mode to avoid unnecessary styles
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
